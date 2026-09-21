@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f6;
+    color: #333;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    background: #00695c;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo i {
+    margin-right: 8px;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar nav a:hover {
+    color: #b2dfdb;
+}
+
+.login-btn {
+    background: white;
+    color: #00695c !important;
+    padding: 10px 18px;
+    border-radius: 25px;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+    background: linear-gradient(
+        135deg,
+        #004d40,
+        #00897b
+    );
+
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 80px 10%;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.welcome {
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #b2dfdb;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.main-btn,
+.secondary-btn {
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.main-btn {
+    background: white;
+    color: #00695c;
+}
+
+.secondary-btn {
+    border: 2px solid white;
+    color: white;
+}
+
+.main-btn:hover,
+.secondary-btn:hover {
+    opacity: 0.8;
+}
+
+
+/* HERO ICON */
+
+.hero-icon {
+    font-size: 180px;
+    opacity: 0.15;
+}
+
+
+/* SECTIONS */
+
+.section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section h2,
+.contact h2 {
+    color: #00695c;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section > p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+
+/* SERVICE CARDS */
+
+.services {
+    margin-top: 40px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    padding: 35px 20px;
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card i {
+    font-size: 40px;
+    color: #00897b;
+    margin-bottom: 15px;
+}
+
+.service-card  a {
+    margin-bottom: 10px;
+    color: #00695c;
+    
+}
+
+.service-card p {
+    line-height: 1.6;
+}
+
+
+/* CONTACT */
+
+.contact {
+    background: #004d40;
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #00251a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-icon {
+        font-size: 100px;
+        margin-top: 30px;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+
+}
+
+/*for tables in the admin dashboard*/
+
+.container {
+    padding: 30px;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: #00695c;
+    color: white;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}

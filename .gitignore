@@ -1,0 +1,22 @@
+# XAMPP / local files
+*.log
+
+# Environment / sensitive configuration
+.env
+.env.*
+database.local.php
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Backup files
+*.bak
+*.old
